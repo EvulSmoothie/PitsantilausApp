@@ -57,7 +57,7 @@ app.delete('/api/orders/:id', (request, response) => {
 
 
 //Kuunnellaan porttia
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 3010
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`)
 })
